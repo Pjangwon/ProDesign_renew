@@ -4,9 +4,15 @@ html, body {
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 header, nav, main, article, figure, p, footer {
   border: 1px solid black;
-  /* margin: 5px; */
   padding: 5px;
 }
 
@@ -49,6 +55,12 @@ p {
   background-color: lightcoral;
 }
 
-/* #logoImg {
+#logoImg {
+  position: relative;
+  left: 20px;
+}
 
-} */
+i.fas.fa-bars {
+  text-align: right;  /* 수평 정렬 */
+  font-size: 24px;    /* 아이콘 크기 조정 (필요한 경우) */
+}
